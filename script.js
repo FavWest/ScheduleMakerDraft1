@@ -2,6 +2,9 @@ console.log("connected");
 
 /*Note: function makeTableHead and function makeTable
 come from https://www.valentinog.com/blog/html-table/*/
+
+
+/*Creates a table head using the keys for the entered data*/
 function makeTableHead(table, data) {
   let thead=table.createTHead();
   let row=thead.insertRow();
@@ -13,6 +16,7 @@ function makeTableHead(table, data) {
   }
 }
 
+/*Creates the table body using the entered data*/
 function makeTable(table, data) {
   for (let element of data){
     let row=table.insertRow();
